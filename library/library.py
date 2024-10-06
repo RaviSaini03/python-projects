@@ -19,11 +19,11 @@ def load_books():
                     bookPrice.append(int(price))
                  # If the file is empty (no books saved by incharge), return default books
             if not bookName and not bookPrice:
-                return ["Ice and Fire", "Breaking Bad", "Mirzapur", "Squid Games"], [900, 800, 700, 500]
+                return ["Ice and Fire", "Physics", "Maths", "Chemistry"], [90, 80, 70, 50]
             return bookName, bookPrice
     else:
         # If file doesn't exist, return default books
-        return ["Ice and Fire", "Breaking Bad", "Mirzapur", "Squid Games"], [900, 800, 700, 500]
+        return ["Ice and Fire", "Physics", "Maths", "Chemistry"], [90, 80, 70, 50]
     
 bookName, bookPrice = load_books()
 
